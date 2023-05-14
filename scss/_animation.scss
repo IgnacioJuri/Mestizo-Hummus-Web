@@ -1,0 +1,107 @@
+.button:hover{
+    background-color: black;
+    color: $mainColor;
+    transition: all 1s;
+}
+
+.button:not(:hover){
+    background-color: $mainColor;
+    color: white;
+    transition: all 1s;
+}
+
+.red-button:hover{
+    background-color: black;
+    color: $RedColor;
+    transition: all 1s;
+}
+
+.red-button:not(:hover){
+    background-color: $RedColor;
+    color: white;
+    transition: all 1s;
+}
+
+.blue-button:hover{
+    background-color: black;
+    color: $BlueColor;
+    transition: all 1s;
+}
+
+.blue-button:not(:hover){
+    background-color: $BlueColor;
+    color: white;
+    transition: all 1s;
+}
+
+.btn-comprar:hover{
+    background-color: black;
+    color: $mainColor;
+    transition: all 1s;
+}
+
+.btn-comprar:not(:hover){
+    background-color: $mainColor;
+    color: white;
+    transition: all 1s;
+}
+
+.btn-comprar-red:hover{
+    background-color: black;
+    color: $RedColor;
+    transition: all 1s; 
+}
+
+.btn-comprar-red:not(:hover){
+    background-color: $RedColor;
+    color: white;
+    transition: all 1s;
+}
+
+.btn-comprar-blue:hover{
+    background-color: black;
+    color: $BlueColor;
+    transition: all 1s;
+}
+
+.btn-comprar-blue:not(hover){
+    background-color: $BlueColor;
+    color: white;
+    transition: all 1s;
+}
+
+.img-1 img.arriba:hover{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+.img-1 img.arriba:not(:hover){
+    opacity: 0;
+    transition: all 1s;
+}
+
+.img-2 img.arriba:hover{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+.img-2 img.arriba:not(:hover){
+    opacity: 0;
+    transition: all 1s;
+}
+
+.img-3 img.arriba:hover{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+.img-3 img.arriba:not(:hover){
+    opacity: 0;
+    transition: all 1s;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+

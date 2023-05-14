@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(235, 231, 220);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    div{
+        img{
+            width: 90%;
+        }
+    }
+}
+@media(max-width:800px){
+    footer{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

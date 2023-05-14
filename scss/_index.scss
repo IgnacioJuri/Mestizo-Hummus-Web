@@ -1,0 +1,362 @@
+
+.container-1{
+    margin: 4em;
+    display: grid;
+    background-color: $backgroundColor;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-areas:
+    "tit-1 img-1"
+    "txt-1 img-1"
+    "img-2 tit-2"
+    "img-2 txt-2"
+    "tit-3 img-3"
+    "txt-3 img-3";
+}
+//sabor 1
+.tit-1{
+    grid-area: tit-1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    h1{
+        padding-top: 2em;
+        margin-left: 30px;
+        font-size: 5em;
+        font-weight: 900;
+        text-align: left;
+        font-family: $mainFont;
+    }
+}
+
+.txt-1{
+    grid-area: txt-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 4em;
+    h3{
+        font-size: 1.2em;
+       font-weight: lighter;
+        font-family: $mainFont; 
+        margin-left: 30px; 
+    }
+}
+
+.img-1{
+    grid-area: img-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    img{
+        max-width: 90%; 
+        position: absolute; top: 0; left: 0; bottom: 0; right:0;
+        z-index: 1;
+    }
+}
+
+.img-1 img.arriba{
+    z-index: 2;
+    opacity: 0;
+    max-width: 87%;
+}
+
+.img-1 img.arriba:hover{
+    opacity: 100%;
+    transition: all 1s;
+}
+//ends sabor 1
+//sabor 2 
+.tit-2{
+    grid-area: tit-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    h2{
+        padding-top: 2em;
+        margin-right: 30px;
+        font-size: 5em;
+        font-weight: 900;
+        text-align: left;
+        font-family: $mainFont;
+    }
+}
+
+.txt-2{
+    grid-area: txt-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 5em;
+    h3{
+        font-size: 1.2em;
+       font-weight: lighter;
+        font-family: $mainFont; 
+        margin-right: 30px; 
+    }
+}
+
+.img-2{
+    grid-area: img-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    img{
+        max-width: 90%; 
+        position: absolute; top: 0; left: 0; bottom: 0; right:0;
+        z-index: 1;
+    }
+}
+.img-2 img.arriba{
+    z-index: 2;
+    opacity: 0;
+    max-width: 87%;
+}
+
+.img-2 img.arriba:hover{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+//ends sabor 2
+//sabor 3
+.tit-3{
+    grid-area: tit-3;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    h2{
+        padding-top: 2em;
+        margin-left: 30px;
+        font-size: 5em;
+        font-weight: 900;
+        text-align: left;
+        font-family: $mainFont;
+    }
+}
+
+.txt-3{
+    grid-area: txt-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+    h3{
+        font-size: 1.2em;
+       font-weight: lighter;
+        font-family: $mainFont; 
+        margin-left: 30px; 
+    }
+}
+
+.img-3{
+    grid-area: img-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    img{
+        max-width: 90%; 
+        position: absolute; top: 0; left: 0; bottom: 0; right:0;
+        z-index: 1;
+    }
+}
+
+.img-3 img.arriba{
+    z-index: 2;
+    opacity: 0;
+    max-width: 87%;
+}
+
+.img-3 img.arriba:hover{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+
+@media (max-width: 800px){
+    .container-1{
+        margin: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 0.25fr);
+        grid-template-areas: 
+        "tit-1"
+        "txt-1"
+        "img-1"
+        "tit-2"
+        "txt-2"
+        "img-2"
+        "tit-3"
+        "txt-3"
+        "img-3";
+    }
+    .tit-1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1{
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+    .tit-2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2{
+            text-align: center;
+            margin-right: 0;
+        }
+    }
+    .tit-3{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2{
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+    .txt-1{
+        align-items: center;
+        margin: 10px;
+        margin-bottom: 0;
+        h3{
+            margin-left: 0;
+        }
+        button{
+            margin-left: 0;
+        }
+    }
+    .txt-2{
+        align-items: center;
+        margin: 10px;
+        margin-bottom: 0;
+        h3{
+            margin-right: 0;
+        }
+        button{
+            margin-right: 0;
+        }
+    }
+    .txt-3{
+        align-items: center;
+        margin: 10px;
+        margin-bottom: 0;
+        h3{
+            margin-left: 0;
+        }
+        button{
+            margin-left: 0;
+        }
+    }
+    .img-1{
+        position: static;
+        img{
+            position: static;
+        }
+    }
+    .img-1 img.arriba{
+        display: none;
+    }
+    .img-2{
+        position: static;
+        img{
+            position: static;
+        }
+    }
+    .img-2 img.arriba{
+        display: none;
+    }
+    .img-3{
+        position: static;
+        img{
+            position: static;
+        }
+    }
+    .img-3 img.arriba{
+        display: none;
+    }
+}
+
+@media(max-width: 379px){
+    .tit-1{
+        h1{
+            font-size: 3em;
+        }
+    }
+    .tit-2{
+        h2{
+            font-size: 3em;
+        }
+    }
+    .tit-3{
+        h2{
+            font-size: 3em;
+        }
+    }
+}
+
+.button{
+    border-radius: 30px;
+    width: 7em;
+    height: 2.5em;
+    background-color: $mainColor;
+    color: white;
+    border-color: transparent;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.red-button{
+    border-radius: 30px;
+    width: 7em;
+    height: 2.5em;
+    background-color: $RedColor;
+    color: white;
+    border-color: transparent;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.blue-button{
+    border-radius: 30px;
+    width: 7em;
+    height: 2.5em;
+    background-color: $BlueColor;
+    color: white;
+    border-color: transparent;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+header{
+    background-color: $backgroundColor;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 600px){
+    header{
+        display: none;
+    }
+}

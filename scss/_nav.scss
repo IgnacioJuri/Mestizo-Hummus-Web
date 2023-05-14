@@ -1,0 +1,37 @@
+// Nesting
+.botonera{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 1fr;
+    background-color: $navBackgroundColor;
+    ul{
+        list-style: none;
+        display: inline-block;
+        li{
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 5px;
+            a{
+                color: $mainColor ;
+                text-decoration: none;
+                font-family: $mainFont;
+                color: rgb(0, 0, 0);
+                font-size: 1.5em;
+                    &:hover{
+                        color: $mainColor;
+                        transition: all 1s;
+                    }
+                    &:not(:hover){
+                        color: black;
+                        transition: all 1s;
+                    }
+            }
+        }
+    }
+    img{
+        width: 50%;
+    }
+}
+
